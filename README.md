@@ -36,4 +36,4 @@ https://samhith10.netlify.app/
 
 <br>
 
-![Screenshot](./preview2.png) "Template Screenshot")
+![Screenshot](./preview.png) "Template Screenshot")
