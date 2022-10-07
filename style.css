@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+
+.container {
+    min-height: 100vh;
+    height: 100%;
+    background-image: url("assets/retro-living-room-interior-design_53876-145503.jpeg");
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    color: #fff;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 10%;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    border-bottom: 2px solid #fff;
+    height: 10vh;
+}
+
+ul {
+    width: 70%;
+    font-weight: 600;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.contact_us {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_us img {
+    max-width: 15%;
+    display: inline-block;
+}
+
+.contact {
+    width: 80%;
+}
+
+.contact p {
+    font-weight: 400;
+}
+
+.contact h2 {
+    font-weight: 500;
+}
+
+.menu {
+    display: none;
+}
+
+.main {
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.col1 {
+    flex: 1 50%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.col1 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.col1 button {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    color: #fff;
+    font-weight: 600;
+}
+.col1 button:hover {
+    background-color:#fff;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+
+.col2 {
+    flex: 1 50%;
+}
+
+.cardcontent1 {
+    height: 25vh;
+    background-color: rgb(174 193 208 / 30%);
+    color: #fff;
+}
+.cardcontent1 img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.cardcontent1 p{
+    text-align: center;
+}
+.cardcontent2 img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.cardcontent2 p{
+    text-align: center;
+}
+
+.cardcontent2 {
+    color: #fff;
+    margin-top: 15px;
+    height: 25vh;
+    background-color: rgb(174 193 208 / 30%);
+}
+
+@media (max-width:900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col1 , .col2{
+        margin: 1.5rem;
+    }
+    .col1 h1{
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .col1 button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width:900px) {
+
+    .col2 {
+        margin-right: 1rem;
+        display: grid;
+        grid-template-columns: 40% 10% 40%;
+        grid-template-rows: 35% 15% 35%;
+    }
+
+    p {
+        margin: 0.5rem;
+        text-align: left;
+    }
+
+
+    .cardcontent1 {
+        background-color: rgb(174 193 208 / 30%);
+        grid-area: 1/2/2/4;
+        height: 100%;
+    }
+
+    .design1 {
+        grid-area: 2/3/3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .line1 {
+        width: 2px;
+        height: 100%;
+        background-color: white;
+    }
+
+    .circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+
+    .cardcontent2 {
+        background-color: rgb(174 193 208 / 30%);
+        grid-area: 3/1/4/2;
+    }
+
+    .design2 {
+        grid-area: 2/2/4/3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .line2 {
+        width: 50%;
+        height: 2px;
+        background-color: white;
+    }
+
+}
